@@ -1,0 +1,133 @@
+h1 {
+    font-family: "Fredericka the Great", serif;
+    font-size: 50pt;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: #f9f6ee;
+    width: 100%;
+}
+
+body {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    background-color: #050e39;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+form {
+    background-color: transparent;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+}
+
+label {
+    display: block;
+    color: #f9f6ee;
+    margin-bottom: 2rem;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+input[type="text"],
+textarea {
+    font-size: 20pt;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    margin: 0 auto 1rem;
+    background-color: #f9f6ee;
+    border-radius: 30px;
+    height: 100px;
+    resize: none;
+}
+
+input[type="submit"] {
+    background-color: #11112c;
+    font-family: "Comfortaa", sans-serif;
+    color: #f9f6ee;
+    margin-top: 20px;
+    padding: 0.75rem 1.2rem;
+    border: 1pt solid white;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+input[type="submit"]:hover {
+    background-color: #f9f6ee;
+    color: #11112c;
+}
+
+input[type="submit"], #returnButton {
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+#confirmationMessage {
+    box-sizing: border-box;
+    text-align: center;
+    background: transparent;
+    margin: 2rem auto;
+    max-width: 500px;
+}
+
+#confirmationMessage h2 {
+    color: #f9f6ee;
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding-bottom: 25pt;
+}
+
+#returnButton {
+    padding: 0.75rem 1.5rem;
+    font-family: "Comfortaa", sans-serif;
+    background-color: #11112c;
+    color: #f9f6ee;
+    border: none;
+    border-radius: 30px;
+    border: 1pt solid white;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 12pt;
+}
+
+#returnButton:hover {
+    background-color: #f9f6ee;
+    color: #11112c;
+}
+
+#starryBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #0a0a23, #1b1b3a);
+}
+
+.star {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+@keyframes twinkle {
+    0%, 100% { opacity: 0.2; }
+    50% { opacity: 1; }
+}
+
+neon-container {}
